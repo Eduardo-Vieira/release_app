@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Release Note</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" /> 
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nova Versão</h1>
+        <form id="cadversion" method="POST">
+            <div class="form-group">
+              <label for="version">Versão</label>
+              <input type="text" class="form-control" id="version" name="version" placeholder="Versão">
+            </div>
+            <div class="form-group">
+                    <label for="note">Nota</label>
+                    <input type="text" class="form-control" id="note" name="note" placeholder="Nota">
+            </div>
+            <div class="form-group">
+                    <label for="note">Data</label>
+                    <input type="text" class="form-control" id="data" name="data" placeholder="ex: 00/00/0000">
+            </div>
+            <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea class="form-control" id="descricao" name="descricao" placeholder="Descrição" rows="6"></textarea>
+            </div>
+
+            <input type="hidden" id="identifier" name="identifier" value="newversion"/>
+            <button type="button" id="btnsaveversion" class="btn btn-default">Salvar</button>
+        </form>
+    </div>   
+</body>
+<footer>
+    <div class="container">
+      <p class="text-muted">Relese Note - 2018</p>
+    </div>
+</footer> 
+</html>
